@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PC Build Assistant Pro</title>
+style.css
+https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap
+</head>
+<body>
+
+<div id="particles"></div>
+
+<header>
+    <h1>PC Build Assistant Pro</h1>
+    <p>Enter your PC parts and get a complete professional build guide.</p>
+</header>
+
+<div class="container">
+
+    <div class="card form-card">
+
+        <h2>Your Components</h2>
+
+        <input id="cpu" placeholder="CPU">
+        <input id="cooler" placeholder="CPU Cooler">
+        <input id="motherboard" placeholder="Motherboard">
+        <input id="ram" placeholder="RAM">
+        <input id="gpu" placeholder="Graphics Card">
+        <input id="storage" placeholder="Storage">
+        <input id="psu" placeholder="Power Supply">
+        <input id="case" placeholder="PC Case">
+
+        <button onclick="generateGuide()">
+            Generate Build Guide
+        </button>
+
+    </div>
+
+    <div class="card output-card">
+
+        <div class="top-stats">
+
+            <div class="stat">
+                <h3>Difficulty</h3>
+                <span id="difficulty">-</span>
+            </div>
+
+            <div class="stat">
+                <h3>Compatibility</h3>
+                <span id="compatibility">-</span>
+            </div>
+
+            <div class="stat">
+                <h3>Progress</h3>
+                <span id="progress">0%</span>
+            </div>
+
+        </div>
+
+        <div id="guide">
+            Build guide will appear here.
+        </div>
+
+    </div>
+
+</div>
+
+script.jsscript>
+</body>
+</html>
